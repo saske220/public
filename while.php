@@ -93,3 +93,66 @@ do{
 }while($j>=150);
 
 // do whileは一回は必ず実行される
+
+// p99 check test
+// Q1
+// breakは処理終了
+
+// Q2
+// defaultは、どの条件にも当てはまらない場合に実行
+
+// Q3
+echo "<hr>";
+echo "forで実行<br>";
+for ($i=10;$i>=1;$i--) {
+    echo $i . "<br>";
+}
+echo "<hr>";
+echo "whileで実行<br>";
+$i=10;
+while ($i>=1) {
+    echo $i . "<br>";
+    $i--;
+}
+
+//Q4
+$i = 2;
+while ($i < 2) {
+    echo "whileループ";
+    $i++;
+}
+echo "whileループを抜けました";
+
+//Q5
+$total = 10;
+switch ($total) {
+    case 10:
+        echo "10";
+        break;
+    case 20:
+        echo "20";
+        break;
+    default:
+        echo "その他";
+}
+
+
+
+?>
+
+<pre>
+<?php
+//$friends = array("はるき", "かおる", "ひでと");
+$friends = ["はるき", "かおる", "ひでと"];
+var_dump($friends);
+//最初が0番目と、0から始める
+echo "0番目: " . $friends[0] . "<br>";
+echo "1番目: " . $friends[1] . "<br>";
+echo "2番目: " . $friends[2] . "<br>";
+?>
+</pre>
+
+<pre>
+<?php var_dump($students);
+
+echo $students
