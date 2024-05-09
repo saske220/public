@@ -14,4 +14,15 @@ $foods = array(
     "果物" => $fruits,
     "野菜" => $vegetables);
 
-var_dump($foods);
+foreach($foods as $food){
+    var_dump($food);
+    //array("いちご", "リンゴ", "バナナ")
+    //array("きゅうり", "かぼちゃ", "じゃがいも")
+    //がじゅんにでてくる
+echo $title;
+    echo "<hr>";
+
+    foreach($food as $item){
+        echo $item . "<br>";
+    }
+};
