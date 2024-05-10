@@ -19,3 +19,6 @@ abc
 
 
     <?php endif; ?>
+    <?php
+    $i = 0;
+    ?>
