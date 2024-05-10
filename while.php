@@ -156,3 +156,5 @@ echo "2番目: " . $friends[2] . "<br>";
 <?php var_dump($students);
 
 echo $students
+
+?>
