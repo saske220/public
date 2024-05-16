@@ -1,3 +1,11 @@
+
+<style>
+.red {
+    color: red;
+    font-weight: bold;
+}
+</style>
+
 <?php
 
 $results = array(
@@ -5,8 +13,33 @@ $results = array(
 	"English" => 70,
 	"Mathematics" => 50,
 	"History" => 60,
+    "Chemistry" => 65,
 	"Biology" => 45
 );
+
+$total = 0;
+echo "<table class='table table-bordered'>";
+foreach($results as $title => $score){
+    echo "<tr>";
+    echo "<td>" . $title . "</td>";
+    if($score < 60){
+    echo "<td><span class='red text-danger fw-bold'>" . $score . "</span></td>";
+}else{
+    echo "<td>" . $score . "</td>";
+}
+    echo "</tr>";
+    $total += $score;
+}
+echo "<tr>";
+echo "<td>Total</td>";
+echo "<td>" . $total . "</td>";
+echo "</tr>";
+echo "</table>";
+echo
+"<!-- bootstrap をつかいたい人は↓";
+
+
+
 
 /*  出力するHTMLのサンプル
     <table class="table table-bordered">
