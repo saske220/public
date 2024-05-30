@@ -23,6 +23,6 @@ if($tmp_star < 1 || $tmp_star > 5){
     $star = "不正な値";
 }else{
     for($i = 0; $i < $tmp_star; $i++){
-        $star .= "★"
+        $star .= "★";
     }
 }
