@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>アンケート送信テスト</title>
+  </head>
+
+  <body>
+    <h1>アンケートフォーム</h1>
+    <form action="post.php" method="post">
+      <p>お名前 : <input type="text" name="name" /></p>
+      <p>
+        性別 : <input type="radio" name="gender" value="man" />男性
+        <input type="radio" name="gender" value="woman" />女性
+      </p>
+      評価 :
+      <select name="star">
+        <option value="1">★☆☆☆☆</option>
+        <option value="2">★★☆☆☆</option>
+        <option value="3">★★★☆☆</option>
+        <option value="4">★★★★☆</option>
+        <option value="5">★★★★★</option>
+      </select>
+      <p>ご意見</p>
+      <p><textarea name="other"></textarea></p>
+      <input type="submit" value="送信" />
+    </form>
+  </body>
+</html>
